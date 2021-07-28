@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def top(request):
-    return HttpResponse(b"Hello World")
+    return render(request, "snippets/top.html") #top関数を書き換え
 
 def snippet_new(request):
     return HttpResponse('スニペットの登録')
